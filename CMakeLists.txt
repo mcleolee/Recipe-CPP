@@ -3,4 +3,4 @@ project(Recipe)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Recipe main.cpp recipe.h recipe.cpp tcp.h tcp.cpp)
+add_executable(Recipe main.cpp recipe.h recipe.cpp tcp.h tcp.cpp tcp_client.cpp)

@@ -223,6 +223,33 @@ tcp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp.cpp.s
 .PHONY : tcp.cpp.s
 
+tcp_client.o: tcp_client.cpp.o
+
+.PHONY : tcp_client.o
+
+# target to build an object file
+tcp_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.o
+.PHONY : tcp_client.cpp.o
+
+tcp_client.i: tcp_client.cpp.i
+
+.PHONY : tcp_client.i
+
+# target to preprocess a source file
+tcp_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.i
+.PHONY : tcp_client.cpp.i
+
+tcp_client.s: tcp_client.cpp.s
+
+.PHONY : tcp_client.s
+
+# target to generate assembly for a file
+tcp_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.s
+.PHONY : tcp_client.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -241,6 +268,9 @@ help:
 	@echo "... tcp.o"
 	@echo "... tcp.i"
 	@echo "... tcp.s"
+	@echo "... tcp_client.o"
+	@echo "... tcp_client.i"
+	@echo "... tcp_client.s"
 .PHONY : help
 
 
