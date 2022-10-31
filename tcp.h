@@ -14,6 +14,7 @@ class connection
 {
 public:
     int tcp_server_init(char *ip, int port, int backlog);
+    int tcp_server_communication(int connectFd);
 };
 
 #endif //RECIPE_TCP_H
