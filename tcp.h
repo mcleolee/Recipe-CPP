@@ -9,12 +9,26 @@
 #define SERVER_PORT 6666
 
 #define SIZE        1024
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//                        SERVER
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-class connection
-{
-public:
-    int tcp_server_init(char *ip, int port, int backlog);
-    int tcp_server_communication(int connectFd);
-};
+int tcp_server_init(char *ip, int port, int backlog);
+int tcp_server_communication(int connectFd);
+int sign_in(char *receiveBuf);
+int print(char *s);
 
+//class connection
+//{
+//public:
+//    int tcp_server_init(char *ip, int port, int backlog);
+//    int tcp_server_communication(int connectFd);
+//    int sign_in(char *receiveBuf);
+//};
+
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//                        CLIENT
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+int tcp_client_init(char *ip, short port);
+int tcp_client_communication(int connectFd, char buf[]);
 #endif //RECIPE_TCP_H

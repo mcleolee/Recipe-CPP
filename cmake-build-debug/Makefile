@@ -196,6 +196,33 @@ recipe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/recipe.cpp.s
 .PHONY : recipe.cpp.s
 
+tcp.o: tcp.cpp.o
+
+.PHONY : tcp.o
+
+# target to build an object file
+tcp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp.cpp.o
+.PHONY : tcp.cpp.o
+
+tcp.i: tcp.cpp.i
+
+.PHONY : tcp.i
+
+# target to preprocess a source file
+tcp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp.cpp.i
+.PHONY : tcp.cpp.i
+
+tcp.s: tcp.cpp.s
+
+.PHONY : tcp.s
+
+# target to generate assembly for a file
+tcp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp.cpp.s
+.PHONY : tcp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +238,9 @@ help:
 	@echo "... recipe.o"
 	@echo "... recipe.i"
 	@echo "... recipe.s"
+	@echo "... tcp.o"
+	@echo "... tcp.i"
+	@echo "... tcp.s"
 .PHONY : help
 
 
