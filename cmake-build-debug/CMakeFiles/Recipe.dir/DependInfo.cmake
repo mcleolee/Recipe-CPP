@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/raven/CLionProjects/Recipe/main.cpp" "/Users/raven/CLionProjects/Recipe/cmake-build-debug/CMakeFiles/Recipe.dir/main.cpp.o"
+  "/Users/raven/CLionProjects/Recipe/recipe.cpp" "/Users/raven/CLionProjects/Recipe/cmake-build-debug/CMakeFiles/Recipe.dir/recipe.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
