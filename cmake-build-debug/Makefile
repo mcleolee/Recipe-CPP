@@ -142,6 +142,33 @@ Recipe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/build
 .PHONY : Recipe/fast
 
+client/tcp_client.o: client/tcp_client.cpp.o
+
+.PHONY : client/tcp_client.o
+
+# target to build an object file
+client/tcp_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/client/tcp_client.cpp.o
+.PHONY : client/tcp_client.cpp.o
+
+client/tcp_client.i: client/tcp_client.cpp.i
+
+.PHONY : client/tcp_client.i
+
+# target to preprocess a source file
+client/tcp_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/client/tcp_client.cpp.i
+.PHONY : client/tcp_client.cpp.i
+
+client/tcp_client.s: client/tcp_client.cpp.s
+
+.PHONY : client/tcp_client.s
+
+# target to generate assembly for a file
+client/tcp_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/client/tcp_client.cpp.s
+.PHONY : client/tcp_client.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -196,6 +223,33 @@ recipe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/recipe.cpp.s
 .PHONY : recipe.cpp.s
 
+server/tcp_server.o: server/tcp_server.cpp.o
+
+.PHONY : server/tcp_server.o
+
+# target to build an object file
+server/tcp_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/server/tcp_server.cpp.o
+.PHONY : server/tcp_server.cpp.o
+
+server/tcp_server.i: server/tcp_server.cpp.i
+
+.PHONY : server/tcp_server.i
+
+# target to preprocess a source file
+server/tcp_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/server/tcp_server.cpp.i
+.PHONY : server/tcp_server.cpp.i
+
+server/tcp_server.s: server/tcp_server.cpp.s
+
+.PHONY : server/tcp_server.s
+
+# target to generate assembly for a file
+server/tcp_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/server/tcp_server.cpp.s
+.PHONY : server/tcp_server.cpp.s
+
 tcp.o: tcp.cpp.o
 
 .PHONY : tcp.o
@@ -223,33 +277,6 @@ tcp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp.cpp.s
 .PHONY : tcp.cpp.s
 
-tcp_client.o: tcp_client.cpp.o
-
-.PHONY : tcp_client.o
-
-# target to build an object file
-tcp_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.o
-.PHONY : tcp_client.cpp.o
-
-tcp_client.i: tcp_client.cpp.i
-
-.PHONY : tcp_client.i
-
-# target to preprocess a source file
-tcp_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.i
-.PHONY : tcp_client.cpp.i
-
-tcp_client.s: tcp_client.cpp.s
-
-.PHONY : tcp_client.s
-
-# target to generate assembly for a file
-tcp_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recipe.dir/build.make CMakeFiles/Recipe.dir/tcp_client.cpp.s
-.PHONY : tcp_client.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,18 +286,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Recipe"
+	@echo "... client/tcp_client.o"
+	@echo "... client/tcp_client.i"
+	@echo "... client/tcp_client.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... recipe.o"
 	@echo "... recipe.i"
 	@echo "... recipe.s"
+	@echo "... server/tcp_server.o"
+	@echo "... server/tcp_server.i"
+	@echo "... server/tcp_server.s"
 	@echo "... tcp.o"
 	@echo "... tcp.i"
 	@echo "... tcp.s"
-	@echo "... tcp_client.o"
-	@echo "... tcp_client.i"
-	@echo "... tcp_client.s"
 .PHONY : help
 
 

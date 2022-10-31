@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "tcp.h"
+#include "../tcp.h"
 
 int main()
 {

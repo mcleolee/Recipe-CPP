@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="//">
+			<Option target="Recipe"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Recipe/client/tcp_client.cpp">
+			<Option target="Recipe"/>
+		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Recipe/main.cpp">
 			<Option target="Recipe"/>
 		</Unit>
@@ -87,13 +93,13 @@
 		<Unit filename="/Users/raven/CLionProjects/Recipe/recipe.h">
 			<Option target="Recipe"/>
 		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Recipe/server/tcp_server.cpp">
+			<Option target="Recipe"/>
+		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Recipe/tcp.cpp">
 			<Option target="Recipe"/>
 		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Recipe/tcp.h">
-			<Option target="Recipe"/>
-		</Unit>
-		<Unit filename="/Users/raven/CLionProjects/Recipe/tcp_client.cpp">
 			<Option target="Recipe"/>
 		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Recipe/CMakeLists.txt">
